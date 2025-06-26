@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* Base Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "poppins", sans-serif;
+	background-color: #f4f6f8;
+	padding: 2rem;
+	color: #333;
+	height: 100vh;
+}
+
+/* Accordion Card Container */
+.accordion-card {
+	width: 100%;
+	max-width: 600px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+	margin: 0 auto 1rem;
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+}
+
+/* Header Section */
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 0.8rem 0;
+	font-weight: 600;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/* Plus/Minus Icon */
+.icon {
+	font-size: 1.6rem;
+	color: #ffa31a;
+	font-weight: bold;
+	transition: transform 0.25s ease;
+}
+
+/* Content Area */
+.content {
+	padding: 0.7rem;
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
