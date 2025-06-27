@@ -1,0 +1,55 @@
+/* Navbar container */
+nav {
+	width: 87%;
+	height: 70px;
+	background-color: #ffffff;
+	border-bottom: 2px solid #f3f3f3;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 3rem;
+	margin: 0 0 0 auto;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+/* Container for input field */
+.nav-container {
+	flex: 1;
+}
+
+/* Search input */
+.search-input {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px 16px;
+	border: 1px solid #ddd;
+	border-radius: 25px;
+	outline: none;
+	transition: 0.3s ease;
+}
+
+.search-input:focus {
+	border-color: #3498db;
+	box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Profile / Icon container */
+.profile-container {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+/* Individual icons */
+.nav-icons {
+	font-size: 1.5rem;
+	color: #555;
+	transition: transform 0.2s, color 0.2s;
+}
+
+.nav-icons:hover {
+	color: #3498db;
+	transform: scale(1.1);
+}
